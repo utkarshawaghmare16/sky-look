@@ -1,0 +1,508 @@
+.header {
+  background: #131921;
+  color: white;
+  padding: 14px 24px;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+.card h3 {
+  font-size: 16px;
+  margin: 8px 0 4px;
+}
+.category {
+  color: #666;
+  font-size: 13px;
+  margin: 0;
+}
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+.card button {
+  width: 100%;
+  background: #ffd814;
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.error {
+  color: red;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.cartRow {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+.cartRow img {
+  width: 120px;
+  border-radius: 6px;
+}
+.cartInfo {
+  flex: 1;
+}
+.cartInfo h3,
+.cartInfo p {
+  margin: 4px 0;
+}
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.qty button {
+  padding: 4px 12px;
+  cursor: pointer;
+}
+.qty .remove {
+  margin-left: 12px;
+  color: #b12704;
+}
+.rowTotal {
+  font-weight: bold;
+  font-size: 18px;
+}
+.total {
+  text-align: right;
+  font-size: 22px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 16px;
+}
+.logout {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.authForm {
+  max-width: 360px;
+  margin: 30px auto;
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  display: grid;
+  gap: 12px;
+}
+.authForm h2 {
+  margin: 0;
+}
+.authForm input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.authForm button {
+  background: #ffd814;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.checkoutBtn {
+  display: inline-block;
+  background: #ffd814;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 20px;
+float: right;
+}
+.authForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  min-height: 70px;
+  font-family: inherit;
+}
+.orderBox {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+}
+.orderBox p { margin: 4px 0; }
+.status {
+  background: #e7f4e4;
+  color: #1a7f37;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.orderBox {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+}
+.orderBox p { margin: 4px 0; }
+.status {
+  background: #e7f4e4;
+  color: #1a7f37;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.success {
+  color: #1a7f37;
+}
+.adminRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+}
+.adminRow img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.adminInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.adminInfo span {
+  font-size: 14px;
+  color: #555;
+}
+.deleteBtn {
+  background: #c62828;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+.serviceCard {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.serviceCard img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+.serviceBody {
+  padding: 14px 16px 18px;
+}
+.serviceBody h3 {
+  margin: 0 0 6px;
+}
+.serviceBody p {
+  margin: 4px 0;
+  color: #444;
+}
+.servicePrice {
+  color: #b12704;
+  font-weight: bold;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.hero {
+  background: radial-gradient(800px 380px at 85% 10%, rgba(232, 69, 124, 0.28), transparent 60%),
+    radial-gradient(600px 320px at 0% 100%, rgba(245, 163, 0, 0.22), transparent 60%), #0f3d3e;
+  color: white;
+  overflow: hidden;
+}
+.bunting { display: block; width: 100%; height: 54px; }
+.heroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 20px 44px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 24px;
+  align-items: center;
+}
+.hero h1 { font-size: clamp(2rem, 5.4vw, 3.4rem); line-height: 1.1; margin: 0 0 12px; }
+.hero h1 em { font-style: normal; color: #f5a300; }
+.hero p { font-size: 17px; max-width: 46ch; opacity: 0.9; margin: 0 0 18px; }
+.heroBtns { display: flex; flex-wrap: wrap; gap: 10px; }
+.heroBtn {
+  background: #ffd814;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 22px;
+  border-radius: 999px;
+}
+.heroBtn.ghost { background: transparent; color: white; border: 1.5px solid white; }
+.heroChips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.heroChips span {
+  font-size: 13px;
+  padding: 4px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+}
+.heroArt { max-width: 340px; width: 100%; justify-self: center; }
+.how { margin: 40px auto; }
+.howSteps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.howStep {
+  background: white;
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+}
+.howStep h3 { margin: 0 0 6px; }
+.howStep p { margin: 0; color: #444; }
+/* 1. Header links: yellow color + underline slides in */
+header a {
+  position: relative;
+  transition: color 0.2s;
+}
+header a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #ffd814;
+  transition: width 0.25s;
+}
+header a:hover {
+  color: #ffd814;
+}
+header a:hover::after {
+  width: 100%;
+}
+
+/* 2. Product cards: lift up + shadow, photo zooms, name turns teal */
+.card {
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+.card img {
+  transition: transform 0.4s;
+}
+.card:hover img {
+  transform: scale(1.08);
+}
+.card h3 {
+  transition: color 0.2s;
+}
+.card:hover h3 {
+  color: #0f6b63;
+}
+
+/* 3. Add to Cart: grows a little */
+.card button {
+  transition: transform 0.15s, filter 0.15s;
+}
+.card button:hover {
+  transform: scale(1.04);
+  filter: brightness(0.95);
+}
+
+/* 4. Hero buttons: lift, ghost button fills white */
+.heroBtn {
+  transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+.heroBtn:hover {
+  transform: translateY(-3px);
+}
+.heroBtn.ghost:hover {
+  background: white;
+  color: #0f3d3e;
+}
+
+/* 5. Hero chips: fill with yellow */
+.heroChips span {
+  transition: background 0.2s, color 0.2s;
+}
+.heroChips span:hover {
+  background: #f5a300;
+  color: black;
+  border-color: #f5a300;
+}
+
+/* 6. How it works steps: lift, heading turns pink */
+.howStep {
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.howStep:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+}
+.howStep h3 {
+  transition: color 0.2s;
+}
+.howStep:hover h3 {
+  color: #e8457c;
+}
+
+/* 7. Hero big word: glows */
+.hero h1 em {
+  transition: text-shadow 0.3s;
+}
+.hero h1:hover em {
+  text-shadow: 0 0 18px rgba(245, 163, 0, 0.7);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+.footer {
+  background: #0f3d3e;
+  color: #d6e4e3;
+  margin-top: 40px;
+  padding: 34px 20px;
+  font-size: 14px;
+}
+.footerInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 24px;
+}
+.footer h3 {
+  color: white;
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+.footer p {
+  margin: 4px 0;
+}
+.footer a {
+  color: #d6e4e3;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer a:hover {
+  color: #ffd814;
+}
+.footerCopy {
+  grid-column: 1 / -1;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  padding-top: 14px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+.galleryNote { color: #555; margin: 0 0 16px; }
+.chipsRow { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.chipBtn {
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 999px;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.chipBtn:hover { background: #f1f1f1; }
+.chipBtn.on { background: #0f3d3e; color: white; border-color: #0f3d3e; }
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+.galleryItem {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  cursor: zoom-in;
+  background: #eee;
+}
+.galleryItem img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+.galleryItem:hover img { transform: scale(1.08); }
+.galleryItem figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 24px 12px 10px;
+  color: white;
+  font-size: 14px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 10px;
+  z-index: 50;
+  padding: 16px;
+  cursor: zoom-out;
+}
+.lightbox img { max-height: 82vh; max-width: 94vw; border-radius: 10px; }
+.lightbox p { color: white; margin: 0; }
